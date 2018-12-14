@@ -74,10 +74,10 @@ while ~isempty(email_contents)
     if length(str) < 1
        continue;
     end
-    for i =1:len(vocabList)
+    for i =1:length(vocabList)
         if(strcmp(str,vocabList{i})==1)
             word_indices=[word_indices; i];
-            break
+            break;
         end
     end
 
